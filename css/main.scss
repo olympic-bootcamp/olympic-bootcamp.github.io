@@ -924,6 +924,7 @@ i.bronze {
 		padding: 0;
 		width: 100%;
 
+
 		li {
 			@include padding(4em, 4em, (0,0,0,0));
 			display: flex;
@@ -939,8 +940,17 @@ i.bronze {
         object-fit: contain;
       }
 
+
+      &:first-child {
+        width: 100%;
+      }
+
+      &:last-child {
+        width: 100%;
+      }
+
 			@for $i from 1 through _misc(max-features) {
-				$j: 0.020 * $i;
+				$j: 0.010 * $i;
 
 				&:nth-child(#{$i}) {
 					background-color: rgba(0,0,0, $j);
