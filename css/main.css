@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@font-face {
+  font-family: "Bebas";
+  src: url(../fonts/bebas.ttf) format("truetype");
+}
 /*
 	Spectral by HTML5 UP
 	html5up.net | @n33co
@@ -1390,7 +1394,7 @@ body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 
 body, input, select, textarea {
   color: #fff;
-  font-family: "Open Sans", Helvetica, sans-serif;
+  font-family: "Bebas", Helvetica, sans-serif;
   font-size: 15pt;
   font-weight: 400;
   letter-spacing: 0.075em;
@@ -1520,7 +1524,7 @@ blockquote {
 code {
   background: rgba(144, 144, 144, 0.25);
   border-radius: 3px;
-  font-family: "Courier New", monospace;
+  font-family: "Bebas", monospace;
   font-size: 0.9em;
   letter-spacing: 0;
   margin: 0 0.25em;
@@ -1529,7 +1533,7 @@ code {
 
 pre {
   -webkit-overflow-scrolling: touch;
-  font-family: "Courier New", monospace;
+  font-family: "Bebas", monospace;
   font-size: 0.9em;
   margin: 0 0 2em 0;
 }
@@ -1989,6 +1993,9 @@ ul.actions {
   cursor: default;
   list-style: none;
   padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 ul.actions li {
   display: inline-block;
@@ -2206,7 +2213,7 @@ input[type=reset].special,
 input[type=button].special,
 button.special,
 .button.special {
-  background-color: #ed4933;
+  background-color: #e92428;
   box-shadow: none !important;
   color: #ffffff !important;
 }
@@ -2215,14 +2222,14 @@ input[type=reset].special:hover,
 input[type=button].special:hover,
 button.special:hover,
 .button.special:hover {
-  background-color: #ef5e4a !important;
+  background-color: #eb3b3f !important;
 }
 input[type=submit].special:active,
 input[type=reset].special:active,
 input[type=button].special:active,
 button.special:active,
 .button.special:active {
-  background-color: #eb341c !important;
+  background-color: #dd161a !important;
 }
 input[type=submit].disabled, input[type=submit]:disabled,
 input[type=reset].disabled,
@@ -2269,45 +2276,49 @@ button,
   width: 100%;
 }
 .features li {
-  padding: 4em 4em 2em 6em;
+  padding: 4em 4em 2em 4em;
   display: flex;
   position: relative;
   text-align: left;
   width: 50%;
+  justify-content: center;
 }
 .features li img.feature-logo {
-  width: 90%;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
   height: auto;
+  object-fit: contain;
 }
 .features li:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.035);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 .features li:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.07);
+  background-color: rgba(0, 0, 0, 0.04);
 }
 .features li:nth-child(3) {
-  background-color: rgba(0, 0, 0, 0.105);
+  background-color: rgba(0, 0, 0, 0.06);
 }
 .features li:nth-child(4) {
-  background-color: rgba(0, 0, 0, 0.14);
+  background-color: rgba(0, 0, 0, 0.08);
 }
 .features li:nth-child(5) {
-  background-color: rgba(0, 0, 0, 0.175);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .features li:nth-child(6) {
-  background-color: rgba(0, 0, 0, 0.21);
+  background-color: rgba(0, 0, 0, 0.12);
 }
 .features li:nth-child(7) {
-  background-color: rgba(0, 0, 0, 0.245);
+  background-color: rgba(0, 0, 0, 0.14);
 }
 .features li:nth-child(8) {
-  background-color: rgba(0, 0, 0, 0.28);
+  background-color: rgba(0, 0, 0, 0.16);
 }
 .features li:nth-child(9) {
-  background-color: rgba(0, 0, 0, 0.315);
+  background-color: rgba(0, 0, 0, 0.18);
 }
 .features li:nth-child(10) {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .features li:before {
   display: block;

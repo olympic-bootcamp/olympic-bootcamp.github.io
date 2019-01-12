@@ -650,6 +650,9 @@ i.bronze {
 			list-style: none;
 			padding-left: 0;
 
+      display: flex;
+      align-items: center;
+      justify-content: center;
 			li {
 				display: inline-block;
 				padding: 0 (_size(element-margin) * 0.75) 0 0;
@@ -928,19 +931,22 @@ i.bronze {
 		width: 100%;
 
 		li {
-			@include padding(4em, 4em, (0,0,0,2em));
+			@include padding(4em, 4em, (0,0,0,0));
 			display: flex;
 			position: relative;
 			text-align: left;
 			width: 50%;
-
+      justify-content: center;
       img.feature-logo {
-        width: 90%;
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
         height: auto;
+        object-fit: contain;
       }
 
 			@for $i from 1 through _misc(max-features) {
-				$j: 0.035 * $i;
+				$j: 0.020 * $i;
 
 				&:nth-child(#{$i}) {
 					background-color: rgba(0,0,0, $j);

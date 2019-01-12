@@ -4,6 +4,11 @@
 ///	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@font-face {
+  font-family: "Bebas";
+  src: url(../fonts/bebas.ttf) format("truetype");
+}
+
 // Misc.
 	$misc: (
 		max-spotlights:		10,
@@ -28,8 +33,8 @@
 
 // Font.
 	$font: (
-		family:				('Open Sans', Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
+		family:				('Bebas', Helvetica, sans-serif),
+		family-fixed:		('Bebas', monospace),
 		weight:				400,
 		weight-bold:		600,
 		weight-extrabold:	800
@@ -102,7 +107,7 @@
 		),
 
 		accent6: (
-			bg:				#ed4933,
+			bg:				#e92428,
 			fg-bold:		#ffffff,
 			fg:				mix(#ed4933, #ffffff, 25%),
 			fg-light:		mix(#ed4933, #ffffff, 40%),
