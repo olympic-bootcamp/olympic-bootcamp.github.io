@@ -1916,6 +1916,7 @@ ul.medals li p {
 div.social-media {
   display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
 div.social-media a {
   color: rgba(255, 255, 255, 0.5);
