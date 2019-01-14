@@ -1894,15 +1894,23 @@ a {
 }
 
 ul.medals {
+  display: flex;
+  flex-direction: row;
   list-style-type: none;
 }
-ul.medals li {
+ul.medals div.medal-icons {
   display: flex;
-  align-items: baseline;
+}
+ul.medals li {
+  padding-left: 0px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 ul.medals li p {
-  padding-left: 10px;
   margin: 0px;
+  text-align: center;
 }
 
 div.social-media {
