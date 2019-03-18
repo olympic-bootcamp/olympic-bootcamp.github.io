@@ -2294,6 +2294,9 @@ button,
   height: auto;
   object-fit: contain;
 }
+.features li:nth-child(2) {
+  width: 100%;
+}
 .features li:first-child {
   width: 100%;
 }
